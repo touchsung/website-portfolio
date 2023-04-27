@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: "Concert One", cursive;
+    margin: 0;
+    padding: 0;
+  }
+}
+@layer components {
+  .btn-primary {
+    @apply rounded-md bg-blue-700 px-7 py-2;
+  }
+  .btn-pushable {
+    @apply rounded-md border-none bg-blue-900 outline-offset-4 relative top-0.5;
+  }
+  .text-pushable {
+    @apply block -translate-y-1.5 transform rounded-md bg-blue-700 px-7 py-2 text-white shadow-inner transition-transform will-change-transform hover:-translate-y-2 hover:ease-out active:-translate-y-1 active:ease-out;
+  }
+}
+
+@layer utilities {
+  .highlight {
+    @apply rounded-sm  bg-blue-100;
+  }
+
+  .container {
+    @apply mx-auto max-w-screen-desktop px-desktop;
+  }
+
+  .section {
+    @apply flex h-[calc(100vh-80px)] items-center;
+  }
+}
