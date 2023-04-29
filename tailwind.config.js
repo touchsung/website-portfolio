@@ -5,10 +5,10 @@ export default {
     extend: {
       screens: {
         desktop: "1440px",
-        mobile: "640px",
       },
       padding: {
         desktop: "120px",
+        desktopContent: "220px",
       },
       colors: {
         blue: {

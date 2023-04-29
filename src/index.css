@@ -27,7 +27,7 @@
   }
 
   .container {
-    @apply mx-auto max-w-screen-desktop px-desktop;
+    @apply mx-auto max-w-screen-desktop;
   }
 
   .section {
