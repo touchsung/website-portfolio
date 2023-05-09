@@ -14,9 +14,9 @@ const TECH_STACK = [
 ];
 const AboutMe = () => {
   return (
-    <>
+    <section id="about" className="py-20">
       <section className="bg-blue-800 py-12 pb-40">
-        <div className="container text-center text-white px-10 lg:px-desktopContent">
+        <div className="container text-center text-white px-mobileContent lg:px-desktopContent">
           <h4 className="text-heading-4 pb-5">About Me</h4>
           <p className="text-heading-5 leading-loose">
             Hello! My name is Jettapat and I graduated with a bachelor of food
@@ -27,7 +27,7 @@ const AboutMe = () => {
           </p>
         </div>
       </section>
-      <section className="container relative -top-36 px-10 lg:px-desktopContent -mb-32">
+      <section className="container relative -top-36 px-mobileContent lg:px-desktopContent -mb-32">
         <div className="bg-white rounded-lg my-10 py-10 px-5 flex flex-wrap gap-10 justify-center shadow">
           {TECH_STACK.map((item) => (
             <div key={item} className="btn-pushable w-fit">
@@ -36,7 +36,7 @@ const AboutMe = () => {
           ))}
         </div>
       </section>
-    </>
+    </section>
   );
 };
 

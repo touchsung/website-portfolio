@@ -1,6 +1,6 @@
 const Introduction = () => {
   return (
-    <section className="flex flex-col gap-4 min-h-screen justify-center container px-10 lg:px-desktopContent py-32 relative z-0">
+    <section className="flex flex-col gap-4 min-h-screen justify-center container px-mobileContent lg:px-desktopContent py-32 relative z-0">
       <h5 className="text-blue-900 text-heading-5 -mb-4">Hi, my name is</h5>
       <h1 className="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-blue-800 to-blue-500 py-2 -mb-3">
         Jettapat Thongsima

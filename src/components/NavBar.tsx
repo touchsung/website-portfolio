@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-screen bg-white shadow fixed z-20">
-      <section className="container flex items-center justify-between py-4 text-blue-700 md:px-md px-10">
+      <section className="container flex items-center justify-between py-4 text-blue-700 md:px-md px-mobileContent">
         <h4 className="text-heading-4  tracking-widest z-20">Touchsung</h4>
         <ul
           className={`flex flex-col gap-20 py-10  text-heading-5 bg-white w-full absolute left-0 items-center z-10 rounded-b-3xl shadow-xl mt-24  ${
@@ -26,10 +26,10 @@ const Navbar = () => {
         >
           {NAV_MENUS.map((item, index) => (
             <li
-              className="w-full text-center ease-in-out duration-300 hover:text-blue-500"
+              className="w-full text-center ease-in-out duration-300 hover:text-blue-500 cursor-pointer"
               onClick={() => {
                 closeMenu();
-                scrollToSection(item);
+                scrollToSection(item.toLowerCase());
               }}
             >
               {index === NAV_MENUS.length - 1 ? (
