@@ -27,7 +27,7 @@ const AboutMe = () => {
           </p>
         </div>
       </section>
-      <section className="container relative -top-36 px-10 lg:px-desktopContent">
+      <section className="container relative -top-36 px-10 lg:px-desktopContent -mb-32">
         <div className="bg-white rounded-lg my-10 py-10 px-5 flex flex-wrap gap-10 justify-center shadow">
           {TECH_STACK.map((item) => (
             <div key={item} className="btn-pushable w-fit">
