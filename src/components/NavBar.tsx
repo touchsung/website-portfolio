@@ -35,9 +35,11 @@ const Navbar = () => {
               }}
             >
               {index === NAV_MENUS.length - 1 ? (
-                <button className="btn-pushable">
-                  <span className="text-pushable">{item}</span>
-                </button>
+                <a href="https://drive.google.com/file/d/1uu2SoHxqS3bQ3ZtMmn3znjptncuc3t6E/view?usp=sharing">
+                  <button className="btn-pushable">
+                    <span className="text-pushable">{item}</span>
+                  </button>
+                </a>
               ) : (
                 item
               )}
