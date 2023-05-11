@@ -67,7 +67,10 @@ const Experience = () => {
                 <h5 className="text-heading-5">{item.duration}</h5>
                 <ul className=" list-disc ml-8 my-4">
                   {item.experiences.map((experience) => (
-                    <li className=" text-heading-6 mb-4 leading-relaxed">
+                    <li
+                      key={experience}
+                      className=" text-heading-6 mb-4 leading-relaxed"
+                    >
                       {experience}
                     </li>
                   ))}
@@ -77,7 +80,7 @@ const Experience = () => {
           ))}
         </div>
       </section>
-      <section className="bg-blue-800 py-12">
+      <section className="social-white bg-blue-800 py-12">
         <div className="container text-center text-white px-mobileContent lg:px-desktopContent">
           <h4 className="text-heading-4 mb-10">Some Things I’ve Built</h4>
           {PROJECTS_INFO.map((project, index) => {

@@ -12,9 +12,11 @@ const Contact = () => {
         open. Whether you have a question or just want to say hi, I’ll try my
         best to get back to you!
       </p>
-      <button className="btn-pushable">
-        <span className="text-pushable">Say Hello</span>
-      </button>
+      <a href="mailto:jettapat.th@gmail.com?subject=Seeking Skilled Developer for Project Collaboration">
+        <button className="btn-pushable">
+          <span className="text-pushable">Say Hello</span>
+        </button>
+      </a>
     </section>
   );
 };

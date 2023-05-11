@@ -15,7 +15,7 @@ const TECH_STACK = [
 const AboutMe = () => {
   return (
     <section id="about" className="py-20">
-      <section className="bg-blue-800 py-12 pb-40">
+      <section className="social-white bg-blue-800 py-12 pb-40">
         <div className="container text-center text-white px-mobileContent lg:px-desktopContent">
           <h4 className="text-heading-4 pb-5">About Me</h4>
           <p className="text-heading-5 leading-loose">

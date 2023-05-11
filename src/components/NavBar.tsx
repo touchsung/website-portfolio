@@ -10,6 +10,7 @@ const Navbar = () => {
 
   const scrollToSection = (section: string) => {
     const element = document.getElementById(section);
+
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -26,6 +27,7 @@ const Navbar = () => {
         >
           {NAV_MENUS.map((item, index) => (
             <li
+              key={index}
               className="w-full text-center ease-in-out duration-300 hover:text-blue-500 cursor-pointer"
               onClick={() => {
                 closeMenu();
