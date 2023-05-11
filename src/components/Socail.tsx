@@ -36,7 +36,7 @@ const Social = () => {
     socialWhiteElements.forEach((element) => {
       const { top, bottom } = element.getBoundingClientRect();
 
-      if (top <= window.innerHeight - 280 && bottom >= 850) {
+      if (top <= window.innerHeight - 280 && bottom >= 550) {
         found = true;
       }
     });

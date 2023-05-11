@@ -46,7 +46,7 @@ const PROJECTS_INFO = [
 ];
 const Experience = () => {
   return (
-    <div id="experience" className="py-20">
+    <div id="experience" className="py-20 pt-0">
       <section className="flex flex-col gap-4 justify-center container px-mobileContent lg:px-desktopContent relative z-0 py-20 text-gray-900">
         <div className=" flex items-center">
           <h4 className="text-heading-4 text-blue-900 min-w-fit">
@@ -102,8 +102,8 @@ const Experience = () => {
                     </a>
                   </div>
                   <div
-                    className={`description_project flex flex-col lg:${
-                      isEven ? "items-end" : "items-start"
+                    className={`description_project flex flex-col ${
+                      isEven ? "lg:items-end" : "lg:items-start"
                     } gap-2 col-span-7 p-8 lg:p-0 items-start bg-white lg:bg-transparent text-blue-900`}
                   >
                     <p className="z-10 text-body-1 lg:text-white">

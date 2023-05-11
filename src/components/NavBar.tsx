@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiMenu } from "react-icons/fi";
+import resume from "../assets/resume_jettapat.pdf";
+
 const NAV_MENUS = ["About", "Experience", "Contact", "Resume"];
 
 const Navbar = () => {
@@ -35,7 +37,7 @@ const Navbar = () => {
               }}
             >
               {index === NAV_MENUS.length - 1 ? (
-                <a href="https://drive.google.com/file/d/1uu2SoHxqS3bQ3ZtMmn3znjptncuc3t6E/view?usp=sharing">
+                <a href={resume}>
                   <button className="btn-pushable">
                     <span className="text-pushable">{item}</span>
                   </button>
