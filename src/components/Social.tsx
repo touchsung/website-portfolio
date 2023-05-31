@@ -46,7 +46,7 @@ const Social = () => {
 
   return (
     <div
-      className={`fixed bottom-0 left-3.5 z-50 ${
+      className={`fixed scale-75 md:scale-100 -bottom-10 md:bottom-0 left-2 lg:left-3.5 z-50 ${
         isWhiteText ? "text-white" : "text-blue-900"
       }`}
     >

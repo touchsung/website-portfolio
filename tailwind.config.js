@@ -9,7 +9,7 @@ export default {
       padding: {
         desktop: "120px",
         desktopContent: "220px",
-        mobileContent: "72px",
+        mobileContent: "48px",
       },
       colors: {
         blue: {
