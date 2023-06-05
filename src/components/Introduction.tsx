@@ -11,7 +11,7 @@ const Introduction = () => {
       </h1>
       <p className="text-blue-900 text-heading-5 max-w-2xl mt-3 leading-10">
         I'm a software developer based in Thailand, I’am coding with a clean and
-        beautiful problem solving in mind. Currently.
+        beautiful problem solving in mind.
       </p>
     </section>
   );
