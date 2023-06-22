@@ -5,7 +5,7 @@ const EXPERIENCES_INFO = [
   {
     name: "TechUp",
     position: "Software Developer",
-    duration: "December 2023 - Present",
+    duration: "December 2022 - Present",
     website: "test",
     experiences: [
       "Successfully created and implemented a customized MDX syntax, enhancing the efficiency and readability of code for the development team. This innovation resulted in improved collaboration and accelerated project timelines.",
