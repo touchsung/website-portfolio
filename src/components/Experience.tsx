@@ -1,26 +1,46 @@
 import homeServiceApp from "../assets/img/Home-Service.png";
 import foodOrderApp from "../assets/img/Food-Order-App.png";
+import populationApp from "../assets/img/Population-Growth.png";
 import { FiExternalLink } from "react-icons/fi";
 const EXPERIENCES_INFO = [
   {
+    name: "CPF",
+    position: "Management Trainee",
+    duration: "September 2023 - Present",
+    website: "https://www.cpfworldwide.com/en/home",
+    experiences: [
+      "In this role, I led the overhaul of the company's back office systems, optimizing operational efficiency. I assessed existing systems, collaborated with cross-functional teams, and managed a development project that improved processes, resulting in enhanced productivity and streamlined operations.",
+      "Collaborating closely with the business team, I analyzed market dynamics and customer behavior to craft and execute targeted marketing strategies. This collaborative effort led to increased brand visibility and higher sales figures as we set and met sales targets, adjusted strategies based on data, and maintained seamless communication between marketing and sales teams.",
+    ],
+  },
+  {
     name: "TechUp",
     position: "Software Developer",
-    duration: "December 2022 - Present",
-    website: "test",
+    duration: "December 2022 - August 2023",
+    website: "https://www.techupth.com/",
     experiences: [
       "Successfully created and implemented a customized MDX syntax, enhancing the efficiency and readability of code for the development team. This innovation resulted in improved collaboration and accelerated project timelines.",
       "Designed and developed engaging HTML and JavaScript exercises, providing hands-on learning opportunities for students. These exercises effectively enhanced their practical skills and understanding of web development concepts.",
-      " Collaborated in leading the development of interactive learning platforms, including code playground, code block, and content creation. These platforms enabled seamless and immersive learning experiences for users, resulting in increased engagement and knowledge retention.",
+      "Collaborated in leading the development of interactive learning platforms, including code playground, code block, and content creation. These platforms enabled seamless and immersive learning experiences for users, resulting in increased engagement and knowledge retention.",
     ],
   },
 ];
 
 const PROJECTS_INFO = [
   {
-    name: "Money Note Line API",
+    name: "Population Growth",
+    scope: "Front-End Project",
+    description:
+      "The Population Growth Visualization project is a dynamic and informative web application that utilizes React and Chart.js to display an animated graph depicting the growth of a population over a series of years. This interactive tool is designed to provide users with a visually engaging and easily understandable representation of how a population changes over time.",
+    img: populationApp,
+    tech_stacks: ["React", "Chart.js"],
+    source: "https://github.com/Touchsung/population-growth-per-country",
+  },
+  {
+    name: "Money Note Chatbot",
     scope: "Back-End Project",
     description:
-      "This is a Go language-based API that allows users to interact with the Money Note Line application. With this API, developers can programmatically access and manipulate user data in the Money Note Line application, such as retrieving account information, getting transaction history, and creating transactions.",
+      "Developed a Go language-based API enabling seamless interaction with the Money Note Line application, empowering developers to access and manage user data programmatically. Achievements include retrieving account details, accessing transaction history, and facilitating the creation of transactions.",
     img: "https://innovationm.co/wp-content/uploads/2019/02/line-messaging.png",
     tech_stacks: ["Go", "Line API", "Wit.ai", "PostgreSQL"],
     source: "https://github.com/Touchsung/money-note-line-api-go",
@@ -44,6 +64,7 @@ const PROJECTS_INFO = [
     source: "https://github.com/Touchsung/Food-Menu-Order",
   },
 ];
+
 const Experience = () => {
   return (
     <div id="experience" className="py-20 pt-0">
@@ -56,14 +77,20 @@ const Experience = () => {
         </div>
         <div>
           {EXPERIENCES_INFO.map((item) => (
-            <div key={item.name} className="flex flex-row gap-4">
-              <h5 className="text-heading-5 text-blue-900">{item.name}</h5>
-              <div className=" bg-blue-900 w-3 mx-5 h-auto rounded relative before:content-[''] before:h-3 before:w-3 before:bg-blue-900 before:rounded-full before:absolute before:-left-1" />
+            <div key={item.name} className="grid grid-flow-col auto-cols-auto">
+              <h5 className="text-heading-5 text-blue-900 w-32">{item.name}</h5>
+              <div className="bg-blue-900 w-1 mx-5 h-auto rounded relative before:content-[''] before:h-3 before:w-3 before:bg-blue-900 before:rounded-full before:absolute before:-left-1" />
               <div className="flex flex-col gap-1">
-                <h5 className="text-heading-5 text-blue-700">
+                <div className="text-heading-5 text-blue-700">
                   {item.position}
-                  <span className="text-blue-800 ml-2">@{item.name}</span>
-                </h5>
+                  <a
+                    href={item.website}
+                    className="text-blue-800 ml-2 hover:underline"
+                    target="_blank"
+                  >
+                    @{item.name}
+                  </a>
+                </div>
                 <h5 className="text-heading-5">{item.duration}</h5>
                 <ul className=" list-disc ml-8 my-4">
                   {item.experiences.map((experience) => (
