@@ -4,9 +4,19 @@ import populationApp from "../assets/img/Population-Growth.png";
 import { FiExternalLink } from "react-icons/fi";
 const EXPERIENCES_INFO = [
   {
+    name: "Machinelogic",
+    position: "Software Developer",
+    duration: "December 2023 - Present",
+    website: "https://www.machinelogic.io/",
+    experiences: [
+      "Designing products for company pain points - Identify and create solutions for inefficiencies or challenges within the company.",
+      "Automating reports to save time and reduce errors - Implement systems to automatically generate and process reports, minimizing manual effort and enhancing accuracy.",
+    ],
+  },
+  {
     name: "CPF",
     position: "Management Trainee",
-    duration: "September 2023 - Present",
+    duration: "September 2023 - November 2023",
     website: "https://www.cpfworldwide.com/en/home",
     experiences: [
       "In this role, I led the overhaul of the company's back office systems, optimizing operational efficiency. I assessed existing systems, collaborated with cross-functional teams, and managed a development project that improved processes, resulting in enhanced productivity and streamlined operations.",
